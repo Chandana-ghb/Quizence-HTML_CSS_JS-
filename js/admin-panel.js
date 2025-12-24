@@ -13,7 +13,7 @@ const tbody = document.querySelector("#userTable tbody");
 // Fetch users from JSON Server
 async function loadUsers() {
   try {
-    const res = await fetch("http://localhost:3000/users");
+    const res = await fetch("https://online-quiz-platform-gjin.onrender.com/users");
     const users = await res.json();
 
     // Exclude admin
@@ -54,3 +54,4 @@ function adminLogout() {
 
 // Load data
 loadUsers();
+
