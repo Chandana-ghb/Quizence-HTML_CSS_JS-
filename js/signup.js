@@ -34,7 +34,7 @@ async function signup(event) {
 
   try {
     // Check if email already exists
-    const checkRes = await fetch(`http://localhost:3000/users?email=${email}`);
+    const checkRes = await fetch(`https://online-quiz-platform-gjin.onrender.com/users?email=${email}`);
     if (!checkRes.ok) throw new Error("Network error");
     const existingUsers = await checkRes.json();
 
@@ -44,7 +44,7 @@ async function signup(event) {
     }
 
     // Save user to JSON server
-    const res = await fetch("http://localhost:3000/users", {
+    const res = await fetch("https://online-quiz-platform-gjin.onrender.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, password, role: "user" }),
@@ -68,3 +68,4 @@ async function signup(event) {
     messageEl.textContent = err.message || "Signup failed";
   }
 }
+
