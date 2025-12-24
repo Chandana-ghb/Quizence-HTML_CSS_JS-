@@ -33,7 +33,7 @@ const marksRuleEl = document.getElementById("marksRule");
 async function loadInstructions() {
     try {
         const res = await fetch(
-            `http://localhost:3000/questions?category=${selectedCategory}&difficulty=${selectedDifficulty}`
+            `https://online-quiz-platform-gjin.onrender.com/questions?category=${selectedCategory}&difficulty=${selectedDifficulty}`
         );
         const questions = await res.json();
 
@@ -63,3 +63,4 @@ loadInstructions();
 function startQuiz() {
     window.location.href = "quiz.html";
 }
+
