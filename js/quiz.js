@@ -51,7 +51,7 @@ let quizFinished = false;
 ========================= */
 async function loadQuizQuestions() {
     const res = await fetch(
-        `http://localhost:3000/questions?category=${selectedCategory}&difficulty=${selectedDifficulty}`
+        `https://online-quiz-platform-gjin.onrender.com/questions?category=${selectedCategory}&difficulty=${selectedDifficulty}`
     );
     questions = await res.json();
 
@@ -170,7 +170,7 @@ async function finishQuiz() {
 
     const totalMarks = questions.length; // each question = 1 mark
 
-    await fetch("http://localhost:3000/quizHistory", {
+    await fetch("https://online-quiz-platform-gjin.onrender.com/quizHistory", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -218,3 +218,4 @@ themeToggle.onclick = () => {
    START QUIZ
 ========================= */
 loadQuizQuestions();
+
