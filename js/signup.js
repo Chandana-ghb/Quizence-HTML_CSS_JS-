@@ -26,11 +26,27 @@ async function signup(event) {
     return;
   }
 
-  const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
-  if (!passwordPattern.test(password)) {
-    messageEl.textContent = "Password must contain letters & numbers (min 6)";
-    return;
-  }
+  // Password validation (detailed feedback)
+if (password.length < 8) {
+  messageEl.textContent = "Password must be at least 8 characters long";
+  return;
+}
+
+if (!/[A-Z]/.test(password)) {
+  messageEl.textContent = "Password must contain at least 1 uppercase letter";
+  return;
+}
+
+if (!/[0-9]/.test(password)) {
+  messageEl.textContent = "Password must contain at least 1 number";
+  return;
+}
+
+if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+  messageEl.textContent = "Password must contain at least 1 special character";
+  return;
+}
+
 
   try {
     // Check if email already exists
@@ -68,4 +84,5 @@ async function signup(event) {
     messageEl.textContent = err.message || "Signup failed";
   }
 }
+
 
