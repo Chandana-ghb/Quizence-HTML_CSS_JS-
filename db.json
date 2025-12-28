@@ -2396,22 +2396,22 @@
     {
       "id": "1",
       "username": "admin",
-      "email": "admin@gmail.com",
-      "password": "admin@123",
+      "email": "admin@quizence.com",
+      "password": "Admin@123",
       "role": "admin"
     },
     {
       "id": "ce97",
       "username": "K.Chandana",
       "email": "chandana@gmail.com",
-      "password": "chandana123",
+      "password": "Chandana@123",
       "role": "user"
     },
     {
       "id": "7869",
       "username": "K.Durga Sri",
       "email": "durga@gmail.com",
-      "password": "durga123",
+      "password": "Durga@123",
       "role": "user"
     }
   ]
