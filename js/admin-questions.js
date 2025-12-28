@@ -1,6 +1,6 @@
 // 🔐 Protect admin
 let admin = JSON.parse(localStorage.getItem("currentUser"));
-if (!admin || admin.email !== "admin@gmail.com") {
+if (!admin || admin.email !== "admin@quizence.com") {
     alert("Access denied");
     window.location.href = "login.html";
 }

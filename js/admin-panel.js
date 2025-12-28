@@ -53,10 +53,5 @@ function adminLogout() {
 }
 
 
-
 // Load data
 loadUsers();
-
-
-
-
