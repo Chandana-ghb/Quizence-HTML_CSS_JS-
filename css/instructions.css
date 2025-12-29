@@ -1,7 +1,4 @@
 
-/* =========================
-   ROOT COLORS (LIGHT THEME)
-========================= */
 :root {
     --bg-main: #f5f7fb;          /* light lavender */
     --card-bg: #ffffff;
@@ -13,9 +10,7 @@
     --text-light: #636e72;
     --border-light: #e0e0e0;
 }
-/* =========================
-   BASE & RESET
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +28,6 @@ body {
     padding: 20px;
 }
 
-/* =========================
-   CARD
-========================= */
 .instructions-card {
     background-color: var(--card-bg);
     border-radius: 20px;
@@ -52,18 +44,14 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================
-   HEADER
-========================= */
+
 .instructions-card h1 {
     font-size: 1.8rem;
     margin-bottom: 25px;
     color: var(--primary);
 }
 
-/* =========================
-   LIST
-========================= */
+
 .instructions-card ul {
     list-style-type: none;
     text-align: left;
@@ -82,7 +70,7 @@ body {
     color: var(--text-main);
 }
 
-/* Add small icon bullet for a modern look */
+
 .instructions-card ul li::before {
     content: "•";
     color: var(--secondary);
@@ -90,9 +78,7 @@ body {
     font-weight: bold;
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 .btn-primary {
     background-color: var(--primary);
     color: #fff;
@@ -119,9 +105,7 @@ body {
   font-weight: 600;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 600px) {
     .instructions-card {
         padding: 30px 20px;

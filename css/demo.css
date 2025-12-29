@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
+
 body {
   display: flex;
   justify-content: center;  /* horizontal center */
@@ -39,9 +37,7 @@ h1 {
   font-weight: 500;
 }
 
-/* ===============================
-   QUESTION CARD
-================================ */
+
 .question-card {
   text-align: left;
   margin-bottom: 30px;
@@ -90,9 +86,7 @@ h1 {
   border-color: #F93827 !important;
 }
 
-/* ===============================
-   DEMO END
-================================ */
+
 .demo-end {
   margin-top: 30px;
   display: none;
@@ -111,9 +105,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* ===============================
-   BUTTONS
-================================ */
+
 .demo-buttons,
 .demo-end a {
   display: flex;
@@ -161,9 +153,6 @@ h1 {
   background: #e0891c;
 }
 
-/* ===============================
-   RESPONSIVE STYLING
-================================ */
 @media (max-width: 900px) {
   .demo-container {
     padding: 35px 25px;

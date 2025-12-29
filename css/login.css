@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
+
 * {
   box-sizing: border-box;
   transition: all 0.3s ease; /* smooth transitions */
@@ -19,7 +17,7 @@ body {
   overflow: hidden;
   animation: fadeInBody 1s ease forwards;
   position: relative;
-  filter: brightness(1.05) contrast(1.1); /* enhance clarity */
+  filter: brightness(1.05) contrast(1.1); 
 }
 
 body::before {
@@ -27,23 +25,21 @@ body::before {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.35); /* reduced overlay for clarity */
+  background: rgba(0,0,0,0.35); 
   z-index: 0;
 }
 
-/* ===============================
-   LOGIN CARD
-================================ */
+
 .login-container {
   position: relative;
   z-index: 1;
   width: 100%;
   max-width: 380px;
-  animation: slideUp 0.8s ease forwards; /* slide up effect */
+  animation: slideUp 0.8s ease forwards; 
 }
 
 .login-card {
-  background: rgba(255, 255, 255, 0.08); /* glass effect */
+  background: rgba(255, 255, 255, 0.08); 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -68,9 +64,7 @@ body::before {
   animation-delay: 0.5s;
 }
 
-/* ===============================
-   INPUTS WITH ICONS
-================================ */
+
 .input-group {
   position: relative;
   margin-bottom: 20px;
@@ -115,9 +109,7 @@ body::before {
   color: #16C47F;
 }
 
-/* ===============================
-   BUTTON
-================================ */
+
 button {
   width: 100%;
   padding: 14px;
@@ -141,9 +133,6 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* ===============================
-   ERROR & LINK
-================================ */
 #error {
   margin-top: 12px;
   font-size: 14px;
@@ -166,9 +155,7 @@ button:hover {
   color: #FFD65A;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+
 @media (max-width: 480px) {
   .login-card {
     padding: 30px 20px;
@@ -189,9 +176,6 @@ button:hover {
   }
 }
 
-/* ===============================
-   ANIMATIONS
-================================ */
 @keyframes fadeInBody {
   0% { opacity: 0; }
   100% { opacity: 1; }

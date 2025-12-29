@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
+
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -29,9 +27,6 @@ body::before {
   z-index: 0;
 }
 
-/* ===============================
-   SIGNUP CONTAINER
-================================ */
 .signup-container {
   position: relative;
   z-index: 1;
@@ -40,9 +35,7 @@ body::before {
   animation: slideUp 0.8s ease forwards;
 }
 
-/* ===============================
-   SIGNUP CARD
-================================ */
+
 .signup-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -68,9 +61,7 @@ body::before {
   animation-delay: 0.5s;
 }
 
-/* ===============================
-   INPUTS
-================================ */
+
 .signup-card input {
   width: 100%;
   padding: 14px;
@@ -99,9 +90,7 @@ body::before {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
 }
 
-/* ===============================
-   BUTTON
-================================ */
+
 .signup-card button {
   width: 100%;
   padding: 14px;
@@ -124,9 +113,7 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* ===============================
-   MESSAGE & LINK
-================================ */
+
 #message {
   margin-top: 12px;
   font-size: 14px;
@@ -148,9 +135,7 @@ body::before {
   color: #FFD65A;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+
 @media (max-width: 480px) {
   .signup-card {
     padding: 30px 20px;
@@ -167,9 +152,6 @@ body::before {
   }
 }
 
-/* ===============================
-   ANIMATIONS
-================================ */
 @keyframes fadeInBody {
   from { opacity: 0; }
   to { opacity: 1; }

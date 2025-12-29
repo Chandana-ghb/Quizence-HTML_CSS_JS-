@@ -1,6 +1,4 @@
-/* ===============================
-   RESET
-================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +6,7 @@
   font-family: "Georgia", serif;
 }
 
-/* ===============================
-   PAGE BACKGROUND
-================================ */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -22,9 +18,7 @@ body {
   animation: bgAnimate 20s ease infinite;
 }
 
-/* ===============================
-   CERTIFICATE CARD
-================================ */
+
 .certificate {
   width: 100%;
   max-width: 900px;
@@ -39,7 +33,7 @@ body {
   overflow: hidden;
 }
 
-/* Decorative border with inner glow */
+
 .certificate::before {
   content: "";
   position: absolute;
@@ -49,11 +43,6 @@ body {
   pointer-events: none;
 }
 
-/* ===============================
-   CERTIFICATE TEXT
-================================ */
-
-/* Title */
 .certificate h1 {
   font-size: 48px;
   color: #b45309; /* dark gold */
@@ -62,7 +51,7 @@ body {
   animation: fadeUp 1s ease forwards;
 }
 
-/* Text */
+
 .certificate p {
   font-size: 18px;
   margin: 10px 0;
@@ -71,7 +60,7 @@ body {
   animation-delay: 0.1s;
 }
 
-/* Name */
+
 #certName {
   font-size: 38px;
   font-weight: bold;
@@ -83,17 +72,17 @@ body {
   animation-delay: 0.2s;
 }
 
-/* Score */
+
 .score {
   font-size: 22px;
   margin-top: 20px;
   font-weight: 600;
-  color: #10b981; /* green accent */
+  color: #10b981; 
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.3s;
 }
 
-/* Date */
+
 .date {
   margin-top: 14px;
   font-size: 16px;
@@ -102,9 +91,7 @@ body {
   animation-delay: 0.4s;
 }
 
-/* ===============================
-   DOWNLOAD BUTTON
-================================ */
+
 button {
   margin-top: 40px;
   padding: 14px 40px;
@@ -126,9 +113,7 @@ button:hover {
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+
 @media (max-width: 600px) {
   .certificate {
     padding: 40px 30px;
@@ -147,9 +132,7 @@ button:hover {
   }
 }
 
-/* ===============================
-   ANIMATIONS
-================================ */
+
 @keyframes cardEnter {
   from { opacity: 0; transform: scale(0.9) translateY(20px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
@@ -172,9 +155,7 @@ button:hover {
   100% { background-position: 0% 50%; }
 }
 
-/* ===============================
-   PRINT MODE
-================================ */
+
 @media print {
   body {
     background: none;

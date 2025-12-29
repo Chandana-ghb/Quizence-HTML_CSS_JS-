@@ -1,6 +1,4 @@
-/* ===============================
-   RESET & GLOBAL
-================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,24 +9,20 @@
 body {
   min-height: 100vh;
   display: flex;
-  justify-content: center; /* center horizontally on mobile */
-  align-items: center;     /* center vertically on mobile */
+  justify-content: center; 
+  align-items: center;     
   padding: 20px;
-
-  /* Background image */
   background: url('../assets/result.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* ===============================
-   LAPTOP / DESKTOP VIEW - LEFT & MIDDLE
-================================ */
+
 @media (min-width: 1025px) {
   body {
-    justify-content: flex-start; /* align to left */
-    align-items: center;         /* vertically center */
-    padding-left: 60px;          /* space from left edge */
+    justify-content: flex-start; 
+    align-items: center;         
+    padding-left: 60px;          
   }
 
   .result-card {
@@ -55,9 +49,7 @@ body {
 }
 
 
-/* ===============================
-   RESULT CARD
-================================ */
+
 .result-card {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -97,9 +89,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===============================
-   BUTTONS
-================================ */
 button {
   padding: 10px 18px;
   font-size: 0.95rem;
@@ -111,16 +100,16 @@ button {
 }
 
 #certificateBtn {
-  background-color: #16C47F; /* or change to an image if needed */
+  background-color: #16C47F; 
   color: white;
   font-weight: 500;
-  padding: 10px 20px; /* compact padding */
+  padding: 10px 20px; 
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  display: inline-block; /* width adapts to content */
+  display: inline-block; 
   transition: all 0.3s ease;
-  margin-bottom: 15px; /* spacing from other elements */
+  margin-bottom: 15px; 
 }
 
 #certificateBtn:hover {
@@ -148,9 +137,6 @@ button {
   background-color: #e5e7eb;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 @media (max-width: 480px) {
   .result-card {
     padding: 25px 15px;
@@ -194,9 +180,7 @@ button {
   }
 }
 
-/* ===============================
-   LAPTOP / DESKTOP VIEW
-================================ */
+
 @media (min-width: 1025px) {
   .result-card {
     max-width: 700px;

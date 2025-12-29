@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL RESET
-================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===============================
-   NAVBAR
-================================ */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,9 +40,7 @@ body {
   font-weight: 600;
 }
 
-/* ===============================
-   BUTTONS
-================================ */
+
 .btn-primary {
   padding: 10px 22px;
   background: #16C47F;
@@ -79,9 +73,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ===============================
-   HERO SECTION
-================================ */
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -122,9 +114,7 @@ body {
   100% { transform: translateY(0); }
 }
 
-/* ===============================
-   FEATURES SECTION
-================================ */
+
 .features {
   background: #ffffff;
   padding: 80px 8%;
@@ -166,9 +156,6 @@ body {
   font-size: 15px;
 }
 
-/* ===============================
-   CTA SECTION
-================================ */
 .cta {
   background: linear-gradient(135deg, #16C47F, #FF9D23);
   padding: 70px 8%;
@@ -191,9 +178,7 @@ body {
   color: #020617;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+
 footer {
   background: #020617;
   color: #CBD5E1;
@@ -202,9 +187,7 @@ footer {
   font-size: 14px;
 }
 
-/* ===============================
-   RESPONSIVE STYLES
-================================ */
+
 @media (max-width: 1200px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -274,7 +257,7 @@ footer {
   }
 }
 
-/* Modern hamburger toggle */
+
 .menu-toggle {
   width: 35px;
   height: 30px;
@@ -294,7 +277,7 @@ footer {
   transition: all 0.4s ease;
 }
 
-/* Slide effect when active */
+
 .menu-toggle.active span:nth-child(1) {
   transform: translateY(13px) rotate(45deg);
 }
@@ -309,7 +292,6 @@ footer {
 }
 
 
-/* Mobile overlay menu */
 @media (max-width: 768px) {
 
   .menu-toggle {
@@ -319,10 +301,10 @@ footer {
   .nav-buttons {
     position: fixed;
     top: 0;
-    right: -100%;              /* hidden off-screen */
-    width: 80%;                /* smaller menu width */
+    right: -100%;              
+    width: 80%;                
     height: 100vh;
-    background: #ffffff;       /* solid background */
+    background: #ffffff;       
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -361,19 +343,19 @@ footer {
   }
 }
 
-/* Mobile overlay menu buttons shrink when menu opens */
+
 @media (max-width: 768px) {
   .nav-buttons a {
     transition: all 0.3s ease;
   }
 
   .nav-buttons.active a {
-    transform: scale(0.9); /* slightly smaller */
+    transform: scale(0.9); 
   }
 }
 
 
 .nav-buttons.active a {
   transform: scale(0.9);
-  padding: 12px 0; /* reduced from 15px */
+  padding: 12px 0; 
 }

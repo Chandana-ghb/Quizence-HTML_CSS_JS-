@@ -1,6 +1,4 @@
-/* =====================
-   COLOR THEME
-===================== */
+
 :root {
   --green: #16C47F;
   --yellow: #FFD65A;
@@ -13,9 +11,6 @@
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* =====================
-   RESET
-===================== */
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* =====================
-   DASHBOARD GRID
-===================== */
+
 .dashboard-container {
   max-width: 1200px;
   margin: auto;
@@ -47,9 +40,7 @@ body {
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* =====================
-   CARD BASE
-===================== */
+
 .dashboard-card,
 .history-card,
 .leaderboard {
@@ -68,9 +59,6 @@ body {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* =====================
-   LEFT TOP – WELCOME
-===================== */
 .dashboard-card {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -87,7 +75,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Stats */
+
 .user-stats {
   display: flex;
   justify-content: space-between;
@@ -105,9 +93,6 @@ body {
   }
 }
 
-/* =====================
-   DROPDOWNS
-===================== */
 select {
   width: 100%;
   padding: 12px;
@@ -123,9 +108,7 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(22, 196, 127, 0.25);
 }
 
-/* =====================
-   BUTTONS
-===================== */
+
 .button-group {
   display: flex;
   gap: 14px;
@@ -145,7 +128,7 @@ button {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Start */
+
 .start {
   background: linear-gradient(135deg, #16C47F, #10a96b);
 }
@@ -155,7 +138,6 @@ button {
   box-shadow: 0 12px 28px rgba(22, 196, 127, 0.45);
 }
 
-/* Logout */
 .logout {
   background: linear-gradient(135deg, #F93827, #d92f1f);
 }
@@ -165,9 +147,7 @@ button {
   box-shadow: 0 12px 28px rgba(249, 56, 39, 0.45);
 }
 
-/* =====================
-   LEFT BOTTOM – HISTORY
-===================== */
+
 .history-card {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -179,9 +159,7 @@ button {
   margin-bottom: 14px;
 }
 
-/* =====================
-   RIGHT – LEADERBOARD
-===================== */
+
 .section-title {
   display: none;
 }
@@ -196,7 +174,6 @@ button {
   min-height: 100%;
 }
 
-/* Leaderboard heading (FIXED) */
 .leaderboard::before {
   content: "🏆 Leaderboard";
   font-size: 20px;
@@ -205,9 +182,6 @@ button {
   margin-bottom: 16px;
 }
 
-/* =====================
-   TABLE STYLES
-===================== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -241,9 +215,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
 }
 
-/* =====================
-   ANIMATIONS
-===================== */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -260,9 +232,7 @@ tbody tr:nth-child(even) {
   }
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 900px) {
   .dashboard-container {
     grid-template-columns: 1fr;
