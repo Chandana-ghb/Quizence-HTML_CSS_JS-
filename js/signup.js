@@ -72,11 +72,7 @@ if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
     messageEl.style.color = "green";
     messageEl.textContent = "Registration successful! Redirecting to login...";
 
-    console.log("Redirect in 1.5s");
-    setTimeout(() => {
-      console.log("Redirecting now");
-      window.location.replace("login.html"); // reliable redirect
-    }, 1500);
+    window.location.href = "login.html";
 
   } catch (err) {
     console.error(err);
